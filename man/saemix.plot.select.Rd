@@ -141,14 +141,16 @@ saemix.model<-saemixModel(model=model1cpt,
 
 saemix.options<-list(seed=632545,save=FALSE,save.graphs=FALSE)
 
+\dontrun{
 # Not run (strict time constraints for CRAN)
-# saemix.fit<-saemix(saemix.model,saemix.data,saemix.options)
+saemix.fit<-saemix(saemix.model,saemix.data,saemix.options)
 
-# saemix.plot.select(saemix.fit,data=TRUE,main="Spaghetti plot of data")
+saemix.plot.select(saemix.fit,data=TRUE,main="Spaghetti plot of data")
 
 # Putting several graphs on the same plot
-# par(mfrow=c(2,2))
-# saemix.plot.select(saemix.fit,data=TRUE,vpc=TRUE,observations.vs.predictions=TRUE, new=FALSE)
+par(mfrow=c(2,2))
+saemix.plot.select(saemix.fit,data=TRUE,vpc=TRUE,observations.vs.predictions=TRUE, new=FALSE)
+}
 
 }
 \references{

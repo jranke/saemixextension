@@ -77,13 +77,15 @@ saemix.fit<-saemix(saemix.model,saemix.data,saemix.options)
 
 default.saemix.plots(saemix.fit)
 
+\dontrun{
 # Not run (time constraints for CRAN)
-# basic.gof(saemix.fit)
+basic.gof(saemix.fit)
 
 # Not run (time constraints for CRAN)
-# advanced.gof(saemix.fit)
+advanced.gof(saemix.fit)
 
 individual.fits(saemix.fit)
+}
 
 
 }
